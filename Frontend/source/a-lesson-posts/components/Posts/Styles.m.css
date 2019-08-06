@@ -1,0 +1,16 @@
+.posts {
+    padding-top: 100px;
+}
+
+.post {
+    margin-bottom: 35px;
+    & h2 {
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    & p {
+        line-height: 1.6em;
+    }
+}

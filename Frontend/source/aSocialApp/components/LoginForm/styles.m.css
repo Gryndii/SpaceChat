@@ -1,0 +1,22 @@
+.loginForm {
+    width: 400px;
+    max-width: 100%;
+    background-color: rgba(255,255,255,.7);
+    border-radius: 7px;
+    padding: 30px 30px 40px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    & .icon {
+        width: 60px;
+        max-width: 100%;
+        margin-bottom: 5px;
+    }
+    & .input {
+
+    }
+    & .button {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,6 @@
+.navbar {
+    & .navbarContainer {
+        margin: auto;
+    }
+}
+

@@ -1,0 +1,12 @@
+.post {
+    padding: 10px 10px 15px 10px;
+    & + .post {
+        margin-top: 35px;
+      }
+    & .controlIcon + .controlIcon {
+        margin-left: 15px;
+      }
+    & .iconCount {
+            margin-left: 7px;
+      }
+}
