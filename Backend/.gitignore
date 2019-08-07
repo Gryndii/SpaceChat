@@ -6,6 +6,10 @@ yarn-debug.log*
 yarn-error.log*
 firebase-debug.log*
 
+# App Configs
+functions/util/config.js
+functions/util/localhostAuthKey.json
+
 # Firebase cache
 .firebase/
 

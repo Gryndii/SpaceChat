@@ -2,8 +2,12 @@
 const functions = require('firebase-functions');
 const express = require('express');
 const { db } = require('./util/admin');
+//const cors = require('cors')({origin: true});
 
 const app = express();
+
+// Automatically allow cross-origin requests
+//app.use(cors({ origin: true }));
 
 //Handlers
 const {

@@ -15,7 +15,7 @@ export default class Auth {
             throw new Error( 'Login was not successful' );
         }
 
-        console.log('Response: ', await response);
+        console.log('Response: ', await response.json());
 
         const { data } = await response.json();
 

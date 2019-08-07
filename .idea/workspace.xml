@@ -2,7 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79395b3a-0cac-4ff3-9adb-c4f4ae79e60c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/source/aSocialApp/bus/forms/shapes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/functions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/functions/util/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/functions/util/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/functions/util/validators.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/functions/util/validators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/astronaut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/build-stats.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4android-chrome-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4android-chrome-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4android-chrome-256x256.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4android-chrome-36x36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4android-chrome-384x384.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4android-chrome-48x48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4android-chrome-512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4android-chrome-72x72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4android-chrome-96x96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-icon-114x114.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-icon-120x120.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-icon-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-icon-152x152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-icon-167x167.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-icon-180x180.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-icon-57x57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-icon-60x60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-icon-72x72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-icon-76x76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-icon-precomposed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-startup-image-1182x2208.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-startup-image-1242x2148.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-startup-image-1496x2048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-startup-image-1536x2008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-startup-image-320x460.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-startup-image-640x1096.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-startup-image-640x920.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-startup-image-748x1024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-startup-image-750x1294.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4apple-touch-startup-image-768x1004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4firefox_app_128x128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4firefox_app_512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4firefox_app_60x60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/images/favicon/icon-a374e57b76dacd618cd0b5e5775256a4manifest.webapp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/scripts/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/scripts/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/scripts/webpack/modules/assets.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/scripts/webpack/modules/assets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/API/REST/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/aSocialApp/API/REST/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/components/LoginForm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/aSocialApp/components/LoginForm/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/components/LoginForm/styles.m.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/aSocialApp/components/LoginForm/styles.m.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,103 +72,21 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/pages/Login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/components/LoginForm/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-              <folding>
-                <element signature="e#7#46#0" expanded="true" />
-                <element signature="e#131#167#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/API/REST/auth.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/package.json">
+        <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/API/config.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/scripts/git/backup.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1144">
-              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#41#67#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/scripts/constants.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" column="57" lean-forward="true" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Frontend/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="427">
-                <caret line="111" selection-start-line="111" selection-end-line="111" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/source/API/REST/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="7" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Frontend/source/API/REST/auth.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -145,6 +117,10 @@
       <find>signin</find>
       <find>gith</find>
       <find>https://github.com/lectrum/redux-intensive-boilerplate.g</find>
+      <find>REPOSITORY_NAME</find>
+      <find>_submitLoginForm</find>
+      <find>NODE_ENV</find>
+      <find>ini</find>
     </findStrings>
     <dirStrings>
       <dir>D:\Lessons\React\SocialApp\Frontend</dir>
@@ -156,11 +132,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Backend/functions/util/validators.js" />
         <option value="$PROJECT_DIR$/Backend/functions/dbschema.js" />
         <option value="$PROJECT_DIR$/Backend/functions/util/firebaseAuth.js" />
         <option value="$PROJECT_DIR$/Backend/functions/handlers/users.js" />
-        <option value="$PROJECT_DIR$/Backend/functions/index.js" />
         <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/pages/home.js" />
         <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/pages/login.js" />
         <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/pages/signup.js" />
@@ -177,7 +151,6 @@
         <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/navigation/App.js" />
         <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/theme/assets/materialUiTheme.js" />
         <option value="$PROJECT_DIR$/Frontend/source/index.js" />
-        <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/API/config.js" />
         <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/API/index.js" />
         <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/API/REST/posts.js" />
         <option value="$PROJECT_DIR$/Backend/functions/handlers/posts.js" />
@@ -187,19 +160,28 @@
         <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/components/AnimatedBg/index.js" />
         <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/components/AnimatedBg/styles.m.css" />
         <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/components/index.js" />
-        <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/components/LoginForm/styles.m.css" />
         <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/pages/Login.js" />
         <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/API/REST/main.js" />
-        <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/components/LoginForm/index.js" />
         <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/API/REST/auth.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Frontend/scripts/constants.js" />
-        <option value="$PROJECT_DIR$/Frontend/package.json" />
         <option value="$PROJECT_DIR$/Frontend/.gitignore" />
+        <option value="$PROJECT_DIR$/Frontend/package.json" />
+        <option value="$PROJECT_DIR$/Frontend/scripts/webpack/configurations/webpack.config.common.js" />
+        <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/components/LoginForm/styles.m.css" />
+        <option value="$APPLICATION_HOME_DIR$/plugins/textmate/lib/themes/Darcula.tmTheme" />
+        <option value="$PROJECT_DIR$/Backend/functions/util/validators.js" />
+        <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/bus/forms/shapes.js" />
+        <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/components/LoginForm/index.js" />
+        <option value="$PROJECT_DIR$/Backend/functions/util/config.js" />
+        <option value="$PROJECT_DIR$/Backend/functions/util/admin.js" />
+        <option value="$PROJECT_DIR$/Backend/functions/index.js" />
+        <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/API/config.js" />
+        <option value="$PROJECT_DIR$/Frontend/source/API/REST/auth.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="170" />
     <option name="y" value="91" />
     <option name="width" value="1026" />
@@ -211,6 +193,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,25 +210,33 @@
               <item name="SocialApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="SocialApp" type="462c0819:PsiDirectoryNode" />
               <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SocialApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="SocialApp" type="462c0819:PsiDirectoryNode" />
               <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="git" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="API" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SocialApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocialApp" type="462c0819:PsiDirectoryNode" />
+              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="API" type="462c0819:PsiDirectoryNode" />
+              <item name="REST" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Frontend/static/favicon" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Backend/functions/util" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -255,10 +246,13 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Lessons\React\SocialApp\Backend\functions\util" />
+      <recent name="D:\Lessons\React\SocialApp\Frontend" />
       <recent name="D:\Lessons\React\SocialApp\Frontend\static\favicon" />
       <recent name="D:\Lessons\React\SocialApp\Frontend\source\aSocialApp" />
     </key>
@@ -288,17 +282,19 @@
       <workItem from="1564407572520" duration="8211000" />
       <workItem from="1564558470408" duration="71941000" />
       <workItem from="1564959143919" duration="25802000" />
-      <workItem from="1565081962207" duration="12615000" />
+      <workItem from="1565081962207" duration="17812000" />
+      <workItem from="1565167068856" duration="24347000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118569000" />
+    <option name="totallyTimeSpent" value="148113000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49822065" visible="true" weight="0.27609682" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49822065" visible="true" weight="0.31996974" />
       <window_info id="Structure" order="1" sideWeight="0.5017794" side_tool="true" weight="0.27609682" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -310,8 +306,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.44517186" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.400982" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -319,6 +315,28 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49822065" visible="true" weight="0.18532526" />
+      <window_info id="Structure" order="1" sideWeight="0.5017794" side_tool="true" weight="0.27609682" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.5155483" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -331,390 +349,27 @@
           <line>18</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/Frontend/source/aSocialApp/components/LoginForm/index.js</url>
-          <line>31</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Frontend/source/bus/posts/saga/workers/fetchPostsWorker.js">
+    <entry file="file://$PROJECT_DIR$/.git/config">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        <state relative-caret-position="160">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/API/index.js">
+    <entry file="file://$PROJECT_DIR$/Frontend/build/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/API/config.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/API/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../----------------------------Lectrum/react-personal-project/source/REST/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1435">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/API/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/API/REST/posts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/components/Navbar/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="60" lean-forward="true" selection-start-line="6" selection-end-line="7" />
-          <folding>
-            <element signature="e#7#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/functions/dbschema.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/functions/handlers/posts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2675">
-          <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/node_modules/@material-ui/styles/withTheme/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/functions/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1500" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/components/Post/styles.m.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../----------------------------Lectrum/react-personal-project/source/components/Scheduler/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-320">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding>
-            <element signature="e#64#99#0" expanded="true" />
-            <element signature="e#158#194#0" expanded="true" />
-            <element signature="e#317#362#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../----------------------------Lectrum/react-personal-project/source/components/Task/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-580">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding>
-            <element signature="e#128#164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../----------------------------Lectrum/react-online-intensive/source/components/Composer/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding>
-            <element signature="e#132#168#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../----------------------------Lectrum/react-online-intensive/source/components/Feed/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding>
-            <element signature="e#61#116#0" expanded="true" />
-            <element signature="e#380#416#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../----------------------------Lectrum/react-online-intensive/source/components/Post/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="940">
-          <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="70" />
-          <folding>
-            <element signature="e#61#116#0" expanded="true" />
-            <element signature="e#168#196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../----------------------------Lectrum/react-online-intensive/source/components/Like/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-          <folding>
-            <element signature="e#7#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/components/AnimatedBg/styles.m.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/components/AnimatedBg/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/node_modules/@material-ui/core/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/components/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/node_modules/@material-ui/core/IconButton/IconButton.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/node_modules/@material-ui/icons/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="4154" column="17" selection-start-line="4154" selection-start-column="17" selection-end-line="4154" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/components/Post/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-          <folding>
-            <element signature="e#7#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../----------------------------Lectrum/react-online-intensive/source/components/Login/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../----------------------------Lectrum/react-online-intensive/source/Advanced Practice/FormValidationFormik/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/pages/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/bus/forms/shapes.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../----------------------------Lectrum/react-online-intensive/source/Advanced Practice/FormValidationFormik/Components/LoginForm/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding>
-            <element signature="e#7#46#0" expanded="true" />
-            <element signature="e#127#172#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../----------------------------Lectrum/react-online-intensive/source/Advanced Practice/FormValidationFormik/Components/LoginPage/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-          <folding>
-            <element signature="e#183#231#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/components/LoginForm/styles.m.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/components/Forms/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#8#49#0" expanded="true" />
-            <element signature="e#180#216#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/pages/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/API/REST/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#8#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/pages/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/API/REST/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="7" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/functions/handlers/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1380" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/API/REST/auth.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/API/REST/posts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/components/LoginForm/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-          <folding>
-            <element signature="e#7#46#0" expanded="true" />
-            <element signature="e#131#167#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/API/REST/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="180">
-            <caret line="9" column="28" lean-forward="true" selection-end-line="111" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="427">
-            <caret line="111" selection-start-line="111" selection-end-line="111" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../recipe-app/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/scripts/git/sync.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3304">
-          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#41#67#0" expanded="true" />
-            <element signature="e#109#284#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="9" column="65" lean-forward="true" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/scripts/git/backup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1144">
+        <state relative-caret-position="20">
           <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -723,17 +378,346 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/scripts/constants.js">
+    <entry file="file://$PROJECT_DIR$/Frontend/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="57" lean-forward="true" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+        <state relative-caret-position="140">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/.gitignore">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="406">
+            <caret line="111" selection-start-line="111" selection-end-line="111" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/node_modules/formik-material-ui/dist/main.d.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/components/LoginForm/styles.m.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/instruments/validators.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/init/rootReducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding>
+            <element signature="e#60#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/textmate/lib/themes/Darcula.tmTheme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/bus/auth/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/bus/forms/reducer.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../----------------------------Lectrum/react-online-intensive/node_modules/yup/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/functions/util/validators.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/pages/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/pages/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../----------------------------Lectrum/react-online-intensive/source/Advanced Practice/FormValidationFormik/helpers/schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/node_modules/formik/dist/types.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/bus/forms/shapes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/bus/forms/shapes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="19" selection-end-column="7" />
+          <folding>
+            <element signature="e#8#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../----------------------------Lectrum/react-online-intensive/source/Advanced Practice/FormValidationFormik/Components/LoginPage/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="37" />
+          <folding>
+            <element signature="e#7#46#0" expanded="true" />
+            <element signature="e#183#231#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/navigation/Private.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          <folding>
+            <element signature="e#8#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../----------------------------Lectrum/react-online-intensive/source/Advanced Practice/FormValidationFormik/Components/LoginForm/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="46" column="42" lean-forward="true" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
+          <folding>
+            <element signature="e#7#46#0" expanded="true" />
+            <element signature="e#127#172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/components/Forms/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#8#49#0" expanded="true" />
+            <element signature="e#180#216#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/navigation/book.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/bus/auth/actions.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/navigation/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+          <folding>
+            <element signature="e#8#49#0" expanded="true" />
+            <element signature="e#186#216#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/API/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/API/REST/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/functions/util/authorizationKey.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/node_modules/html-webpack-template/examples/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/node_modules/webpack/lib/ContextReplacementPlugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/node_modules/webpack/lib/webpack.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="91" column="47" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/scripts/webpack/configurations/webpack.config.development.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding>
+            <element signature="e#129#183#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/scripts/webpack/modules/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#8#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/components/LoginForm/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+          <folding>
+            <element signature="e#7#46#0" expanded="true" />
+            <element signature="e#266#302#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/scripts/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="17" column="54" lean-forward="true" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/scripts/webpack/configurations/webpack.config.common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="19" />
+          <folding>
+            <element signature="e#41#75#0" expanded="true" />
+            <element signature="e#233#385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/API/REST/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/functions/util/localhostAuthKey.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/scripts/webpack/serve.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          <folding>
+            <element signature="e#8#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/functions/util/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/functions/handlers/posts.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/functions/util/firebaseAuth.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/functions/handlers/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/functions/util/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/functions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/API/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/aSocialApp/API/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/API/REST/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>

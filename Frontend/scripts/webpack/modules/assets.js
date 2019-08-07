@@ -58,8 +58,8 @@ export const setupHtml = () => ({
         new HtmlWebpackPlugin({
             inject:   false,
             template: HtmlWebpackTemplate,
-            title:    'SocialApp',
-            favicon:  `${STATICS}/favicon/astronaut.png`,
+            title:    'Lectrum Education',
+            favicon:  `${STATICS}/favicon/lectrum-favicon-512x512.png`,
             meta:     [
                 {
                     name:    'viewport',

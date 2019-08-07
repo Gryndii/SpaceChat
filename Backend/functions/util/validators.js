@@ -9,7 +9,7 @@ const isEmail = (string) => {
 exports.isEmail = isEmail;
 
 const isPassword = (string) => {
-    if (string.length > 4) {
+    if (string.length > 5) {
         return true;
     } else {
         return false;
