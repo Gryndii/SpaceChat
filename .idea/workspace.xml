@@ -2,233 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79395b3a-0cac-4ff3-9adb-c4f4ae79e60c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Frontend/source/API/REST/profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/API/REST/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/__DOMAIN__/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/__DOMAIN__/reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/__DOMAIN__/saga/watchers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/__DOMAIN__/saga/workers/exampleWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/__DOMAIN__/saga/workers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/__DOMAIN__/types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/auth/saga/workers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/posts/saga/workers/createCommentWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/posts/saga/workers/deletePostWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/posts/saga/workers/fetchCommentsWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/posts/saga/workers/fetchFeedPostsWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/posts/saga/workers/fetchUserPostsWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/posts/saga/workers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/profile/saga/watchers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/profile/saga/workers/fillProfileWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/profile/saga/workers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/profile/saga/workers/updateImageWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/profile/saga/workers/updateProfileWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/users/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/users/reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/users/saga/watchers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/users/saga/workers/fetchPopularUsersWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/users/saga/workers/fetchUserWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/users/saga/workers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/bus/users/types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/AlertPopup/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/AlertPopup/styles.m.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/LoginForm/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/LoginForm/login.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/LoginForm/styles.m.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/Navbar/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/Navbar/styles.m.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/PopularUsers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/PopularUsers/styles.m.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/PostCatcher/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/PostCatcher/styles.m.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/SignupForm/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/SignupForm/login.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/SignupForm/styles.m.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/Spinner/spinner.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/TextComposer/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/TextComposer/styles.m.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/UserCard/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/UserCard/styles.m.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/WelcomeScreen/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/WelcomeScreen/styles.m.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/components/WelcomeScreen/welcome.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/helpers/customErrors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/helpers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/init/middleware.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/pages/User.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/pages/Welcome.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/source/theme/assets/spaceBg-1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/functions/handlers/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/functions/handlers/posts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/functions/handlers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/functions/handlers/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/functions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/functions/util/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/functions/util/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/functions/util/validators.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/functions/util/validators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/.yo-rc.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/.yo-rc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/__mocks__/fileMock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/jest/jest.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/jest/jest.eslint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/jest/jest.stylelint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/jest/jest.test.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/jest/scripts/mocks/fetch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/jest/scripts/mocks/localStorage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/jest/scripts/setupEnzymeEnvironment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/jest/scripts/setupFiles.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/scripts/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/scripts/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/scripts/webpack/modules/assets.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/scripts/webpack/modules/assets.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/API/REST/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/API/REST/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/API/REST/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/API/REST/posts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/API/REST/users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/API/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/API/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/REST API/REST/createPost.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/REST API/REST/fetchPosts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/REST API/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/REST API/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/components/App/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/components/App/styles.m.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/components/Posts/Styles.m.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/components/Posts/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/components/Scheduler/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/components/Scheduler/styles.m.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/components/Spinner/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/components/Spinner/styles.m.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/redux/actions/postsActions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/redux/actions/schedulerActions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/redux/actions/uiActions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/redux/reducers/postsReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/redux/reducers/schedulerReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/redux/reducers/uiReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/redux/redux-saga/watchers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/redux/redux-saga/workers/createPostWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/redux/redux-saga/workers/fetchPostsWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/redux/rootReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/redux/rootSaga.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/redux/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/a-lesson-posts/redux/types.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/API/REST/auth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/API/REST/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/API/REST/posts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/API/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/API/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/bus/forms/shapes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/components/AnimatedBg/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/components/AnimatedBg/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/components/AnimatedBg/styles.m.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/components/AnimatedBg/styles.m.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/components/HOC/withMaterialUiTheme.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/components/HOC/withMaterialUiTheme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/components/LoginForm/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/components/LoginForm/styles.m.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/components/Navbar/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/components/Navbar/styles.m.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/components/Post/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/components/Post/styles.m.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/components/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/navigation/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/navigation/book.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/pages/Home.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/pages/Login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/pages/Signup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/pages/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/theme/animations.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/theme/assets/cross.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/theme/assets/like.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/theme/assets/materialUiTheme.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/theme/assets/materialUiTheme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/theme/assets/photos/1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/theme/assets/photos/2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/theme/assets/photos/3.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/theme/assets/photos/4.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/theme/breakpoints.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/theme/components/start.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/theme/globals.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/theme/init.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/theme/mainStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/theme/mainStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/aSocialApp/theme/palette.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/basic-redux/bus/gallery/actions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/basic-redux/bus/gallery/reducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/basic-redux/bus/gallery/types.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/basic-redux/components/Gallery/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/basic-redux/components/Gallery/styles.m.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/basic-redux/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/basic-redux/init/rootReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/basic-redux/init/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/auth/__tests__/actions.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/auth/__tests__/loginWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/auth/__tests__/reducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/auth/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/auth/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/auth/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/auth/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/auth/saga/watchers.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/auth/saga/watchers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/auth/saga/workers/authWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/auth/saga/workers/authWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/auth/saga/workers/initializeWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/auth/saga/workers/loginWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/auth/saga/workers/loginWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/auth/saga/workers/logoutWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/auth/saga/workers/logoutWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/auth/saga/workers/signupWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/auth/saga/workers/signupWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/auth/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/auth/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/forms/reducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/forms/shapes.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/forms/shapes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/posts/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/posts/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/posts/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/posts/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/posts/saga/watchers.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/posts/saga/watchers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/posts/saga/workers/createPostWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/posts/saga/workers/createPostWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/posts/saga/workers/fetchPostsWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/posts/saga/workers/likePostWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/posts/saga/workers/likePostWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/posts/saga/workers/removePostWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/posts/saga/workers/unlikePostWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/posts/saga/workers/unlikePostWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/posts/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/posts/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/profile/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/profile/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/profile/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/profile/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/profile/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/profile/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/socket/actions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/ui/__tests__/__snapshots__/reducer.js.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/ui/__tests__/actions.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/ui/__tests__/reducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/ui/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/ui/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/ui/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/ui/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/bus/ui/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/bus/ui/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Catcher/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Catcher/styles.m.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Composer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Composer/styles.m.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Forms/Login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Forms/NewPassword.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Forms/Profile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Forms/Signup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Forms/styles.m.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Input/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Like/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Like/styles.m.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Loading/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Loading/styles.m.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Nav/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Nav/styles.m.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Notification/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Notification/styles.m.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Post/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/components/Post/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Post/styles.m.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/components/Post/styles.m.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Posts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/components/Posts/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Posts/styles.m.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/components/Posts/styles.m.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Spinner/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/components/Spinner/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/Spinner/styles.m.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/components/Spinner/styles.m.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/init/middlewear/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/init/middlewear/customThunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/init/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/init/rootReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/init/rootSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/init/rootSaga.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/init/socket.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/instruments/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/instruments/mockedData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/instruments/validators.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/navigation/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/navigation/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/navigation/Private.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/navigation/Private.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/navigation/Public.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/navigation/Public.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/navigation/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/navigation/book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/pages/Feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/pages/Feed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/pages/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/pages/NewPassword.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/pages/Profile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/pages/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/pages/Signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/theme/assets/photos/1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/theme/assets/photos/2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/theme/assets/photos/3.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/theme/assets/photos/4.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/theme/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/theme/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/source/theme/init.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/source/theme/init.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/static/favicon/Lectrum-favicon-512x512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/static/favicon/favicon-woodsmoke.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/static/favicon/faviconOld.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/static/logos/Lectrum.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/static/logos/react.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/static/logos/redux.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -253,8 +42,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>locatio</find>
-      <find>site</find>
       <find>page</find>
       <find>web</find>
       <find>email</find>
@@ -283,12 +70,15 @@
       <find>input</find>
       <find>expi</find>
       <find>session</find>
+      <find>.idea</find>
+      <find>lectrum</find>
     </findStrings>
     <dirStrings>
       <dir>D:\Lessons\React\SocialApp\Frontend</dir>
       <dir>D:\Lessons\React\SocialApp\Frontend\source\aSocialApp</dir>
       <dir>D:\Lessons\React\SocialApp\Frontend\source\aSocialApp\bus</dir>
       <dir>D:\Lessons\React\SocialApp\Frontend\scripts\webpack</dir>
+      <dir>D:\Lessons\React\SpaceChat\Frontend</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -297,13 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/components/PopularUsers/index.js" />
-        <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/components/Post/index.js" />
-        <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/components/PostCatcher/index.js" />
-        <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/components/Spinner/index.js" />
-        <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/components/TextComposer/index.js" />
-        <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/components/WelcomeScreen/index.js" />
-        <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/bus/auth/actions.js" />
         <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/bus/auth/reducer.js" />
         <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/bus/auth/types.js" />
         <option value="$PROJECT_DIR$/Frontend/source/aSocialApp/bus/auth/saga/workers/authWorker.js" />
@@ -348,6 +131,13 @@
         <option value="$PROJECT_DIR$/Backend/functions/util/firebaseAuth.js" />
         <option value="$PROJECT_DIR$/Frontend/source/API/REST/auth.js" />
         <option value="$PROJECT_DIR$/Frontend/source/API/config.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Frontend/.yo-rc.json" />
+        <option value="$PROJECT_DIR$/Frontend/coverage/coverage-final.json" />
+        <option value="$PROJECT_DIR$/Frontend/coverage/clover.xml" />
+        <option value="$PROJECT_DIR$/Frontend/package.json" />
+        <option value="$PROJECT_DIR$/Frontend/package-lock.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -385,7 +175,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Frontend/source/init" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
@@ -410,11 +200,11 @@
       <recent name="D:\Lessons\React\SocialApp\Frontend\source\Andrew" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Lessons\React\SpaceChat" />
       <recent name="D:\Lessons\React\SpaceChat\Frontend\source\init" />
       <recent name="D:\Lessons\React\SpaceChat\Frontend\source\init\middleware" />
       <recent name="D:\Lessons\React\SocialApp\Frontend\source" />
       <recent name="D:\Lessons\React\SocialApp\Frontend\source\aSocialApp\bus\profile\saga\workers" />
-      <recent name="D:\Lessons\React\SocialApp\Frontend\source\aSocialApp\bus\posts\saga\workers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -452,12 +242,12 @@
       <workItem from="1565863904550" duration="168401000" />
       <workItem from="1566331656232" duration="1248000" />
       <workItem from="1566386034123" duration="19062000" />
-      <workItem from="1566413742119" duration="18425000" />
+      <workItem from="1566413742119" duration="21511000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="464047000" />
+    <option name="totallyTimeSpent" value="467133000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -475,7 +265,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4977307" weight="0.61865795" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4977307" visible="true" weight="0.62356794" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50226927" side_tool="true" weight="0.7528642" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -521,145 +311,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Frontend/__mocks__/fileMock.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/scripts/git/sync.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2460">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/scripts/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="52" lean-forward="true" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/jest/scripts/setupEnzymeEnvironment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/components/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/build/build-stats.json">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="63" column="15" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/components/HOC/withMaterialUiTheme.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-          <folding>
-            <element signature="e#7#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/node_modules/@material-ui/core/Button/Button.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/navigation/Private.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/components/Post/styles.m.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/components/Navbar/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="34" column="44" selection-start-line="34" selection-end-line="35" />
-          <folding>
-            <element signature="e#7#48#0" expanded="true" />
-            <element signature="e#191#227#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/node_modules/react-router-dom/esm/react-router-dom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="112" column="4" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/components/PopularUsers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-          <folding>
-            <element signature="e#7#46#0" expanded="true" />
-            <element signature="e#186#231#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/bus/posts/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/components/Post/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#7#46#0" expanded="true" />
-            <element signature="e#167#203#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/components/Posts/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="108" column="89" selection-start-line="108" selection-start-column="89" selection-end-line="108" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/node_modules/@material-ui/core/Input/Input.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/node_modules/@material-ui/core/InputBase/InputBase.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-917">
@@ -874,19 +525,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/API/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+    <entry file="file://$PROJECT_DIR$/Frontend/source/API/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/source/API/index.js">
+    <entry file="file://$PROJECT_DIR$/Backend/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-734">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="10" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/debug.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/.stylelintrc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/.stylelintignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1454" />
+        <state relative-caret-position="1760">
+          <caret line="88" column="24" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/jest/jest.config.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/coverage/coverage-final.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/coverage/clover.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/functions/util/admin.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/functions/util/localhostAuthKey.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/functions/util/config.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/source/API/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/functions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/.yo-rc.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
       </provider>
     </entry>
   </component>

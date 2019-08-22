@@ -1,9 +1,13 @@
 # == Core ==
 
-node_modules/
-coverage/
-build/
-flow-coverage/
+Frontend/node_modules/
+Backend/node_modules/
+Backend/functions/ode_modules/
+Backend/functions/util/config.js
+Backend/functions/util/localhostAuthKey.json
+Frontend/coverage/
+Frontend/build/
+Frontend/flow-coverage/
 
 *.log
 
