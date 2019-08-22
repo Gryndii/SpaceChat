@@ -1,21 +1,18 @@
 //Core
 import { createStore } from 'redux';
-import { connectRouter } from 'connected-react-router';
 
-//Reducer
-import { rootReducer } from './rootReducer';
-
-//RootSaga
+//Roots
+import { createRootReducer } from './rootReducer';
 import { rootSaga } from './rootSaga';
 
-//Middlewear 
-import { enhancedStore, history, sagaMiddleware } from './middlewear/core';
+//Middleware
+import { enhancedStore, sagaMiddleware, history } from './middleware';
 
-export const store = createStore(
-  connectRouter(history)(rootReducer), 
-  enhancedStore
+const store = createStore(
+    createRootReducer(history),
+    enhancedStore,
 );
 
-export { history };
+export { store, history };
 
 sagaMiddleware.run(rootSaga);

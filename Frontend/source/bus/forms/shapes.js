@@ -1,13 +1,11 @@
-// Core
-import { object, string, boolean } from 'yup';
-
-import { invite } from '../../API/config'; 
+//Core
+import { object, string, boolean, ref } from 'yup';
 
 export const login = {
     shape: {
-        email:    'andrey@sd.com',
-        password: '11111111',
-        remember: false,
+        email:    '',
+        password: '',
+        remember: true,
     },
     schema: object().shape({
         email: string()
@@ -16,56 +14,52 @@ export const login = {
         password: string()
             .min(5)
             .required(),
-        remember: boolean(),
+        remember: boolean()
+            .required(),
     }),
 };
 
 export const signup = {
     shape: {
-        firstName: 'andrey',
-        lastName:  'andrey',
-        email:     'andrey@sd.com',
-        password:  '11111111',
-        invite,
+        handle:          '',
+        email:           '',
+        password:        '',
+        confirmPassword: '',
+        remember:        true,
     },
     schema: object().shape({
-        firstName: string().required(),
-        lastName:  string().required(),
-        email:     string()
-            .required()
-            .email(),
+        handle: string()
+            .min(4)
+            .max(15)
+            .required(),
+        email: string()
+            .email()
+            .required(),
         password: string()
-            .required()
-            .min(5),
-        invite: string()
-            .required()
-            .min(12)
-            .max(12),
+            .min(5)
+            .required(),
+        confirmPassword: string()
+            .oneOf([ ref('password'), null ], 'Passwords must match'),
+        remember: boolean()
+            .required(),
     }),
 };
 
-export const newPassword = {
+export const postCreator = {
     shape: {
-        oldPassword: '',
-        newPassword: '',
+        text: '',
     },
     schema: object().shape({
-        oldPassword: string()
-            .required()
-            .min(5),
-        newPassword: string()
-            .required()
-            .min(5),
+        text: string()
+            .min(1)
+            .required(),
     }),
 };
 
-export const composer = {
-    shape: {
-        comment: '',
-    },
+export const updateUserForm = {
     schema: object().shape({
-        comment: string()
-            .required()
-            .min(1),
+        bio:      string(),
+        location: string(),
+        website:  string(),
     }),
 };

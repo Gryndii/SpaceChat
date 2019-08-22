@@ -1,37 +1,39 @@
-//Core 
+//Core
 import { put, apply } from 'redux-saga/effects';
-import { actions } from 'react-redux-form';
 
 //Instruments
 import { api } from '../../../../API';
-import { authenticate } from '../../actions';
-import { startFetching, stopFetching } from '../../../ui/actions';
-import { fillProfile } from '../../../profile/actions';
 
-export function* loginWorker(action) {
-  try {
-    yield put(startFetching());
+//Actions
+import { authActions } from '../../actions';
+import { uiActions } from '../../../ui/actions';
+import { profileActions } from '../../../profile/actions';
 
-    const profile = yield apply(api, api.auth.login, [action.payload]);
-  
-    if (action.payload.remember) {
-      yield apply(localStorage, localStorage.setItem, ['remember', true]);
+export function* loginWorker({ payload: loginCredentials }) {
+    try {
+        yield put(uiActions.startFetching());
+
+        const token = yield apply(api, api.auth.login, [ loginCredentials ]);
+
+        yield api.token = {
+            remember: loginCredentials.remember,
+            token,
+        };
+
+        const userData = yield apply(api, api.profile.getProfileUser);
+
+        yield put(profileActions.fillProfile(userData));
+
+        yield put(authActions.authenticate());
+    } catch ({name, message, response}) {
+        if (name === 'ServerError') {
+            yield put(uiActions.openAlertPopup({
+                title:   'Server Error',
+                message: response[ Object.keys(response)[ 0 ] ],
+            }));
+        }
+        console.log('Login Worker Error: ', message);
+    } finally {
+        yield put(uiActions.stopFetching());
     }
-
-    yield apply(localStorage, localStorage.setItem, [
-      'token',
-      profile.token,
-    ]);
-  
-    yield put(authenticate());
-    yield put(fillProfile(profile));
-    
-    const { firstName, lastName } = profile;
-    yield put(actions.merge('forms.user.profile', { firstName, lastName }));
-  } catch (error) {
-    console.log('signupWorker', error);
-  } finally {
-    yield put(stopFetching());
-  }
-
-};
+}

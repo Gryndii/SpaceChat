@@ -1,0 +1,38 @@
+.loginForm {
+    width: 400px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    background-image: url('./login.png');
+    background-repeat: no-repeat;
+    background-size: 55% auto;
+    background-position: center top;
+    border-radius: 5px;
+    padding: 40% 15px 35px 15px;
+    position: relative;
+
+    & .title {
+        margin-bottom: 30px;
+    }
+
+    & .input {
+        margin-bottom: 20px;
+        width: 300px;
+        max-width: 100%;
+    }
+
+    & .checkbox {
+
+    }
+
+    & .button {
+        margin-top: 10px;
+    }
+
+    & .footnote {
+        margin-top: 25px;
+    }
+}

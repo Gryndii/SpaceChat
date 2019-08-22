@@ -1,0 +1,19 @@
+.textComposer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    & .avatar {
+
+    }
+
+    & .input {
+        width: calc(100% - 112px);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    & .button {
+
+    }
+}

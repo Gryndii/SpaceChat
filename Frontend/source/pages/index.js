@@ -1,7 +1,7 @@
 import Feed from './Feed';
+import User from './User';
 import Login from './Login';
-import NewPassword from './NewPassword';
-import Profile from './Profile';
 import Signup from './Signup';
+import Welcome from './Welcome';
 
-export { Feed, Login, NewPassword, Profile, Signup };
+export { Feed, User, Login, Signup, Welcome };

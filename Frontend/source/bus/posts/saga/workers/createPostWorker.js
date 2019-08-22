@@ -1,21 +1,22 @@
-//Core 
-import { put, apply, select } from 'redux-saga/effects';
+//Core
+import { put, apply } from 'redux-saga/effects';
 
 //Instruments
 import { api } from '../../../../API';
-import { createPost } from '../../actions';
-import { startFetching, stopFetching } from '../../../ui/actions'
- 
-export function* createPostWorker({ payload: comment }) {
-  try {
-    yield put(startFetching());
 
-    const post = yield apply(api, api.posts.create, [ comment ]);
+//Actions
+import { postsActions } from '../../actions';
 
-    yield put(createPost(post));
-  } catch (error) {
-    console.log(error)
-  } finally {
-    yield put(stopFetching());
-  }
-};
+export function* createPostWorker({ payload: postText }) {
+    try {
+        yield put(postsActions.setPostsFetchingState());
+
+        const newPost = yield apply(api, api.posts.create, [ postText ]);
+
+        yield put(postsActions.addPosts(newPost));
+    } catch ({message}) {
+        console.log('Create Posts Worker Error: ', message);
+    } finally {
+        yield put(postsActions.disablePostsFetchingState());
+    }
+}

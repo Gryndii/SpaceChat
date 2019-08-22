@@ -1,29 +1,41 @@
 //Core
-import { Map } from 'immutable';
+import { fromJS, Map } from 'immutable';
 
 //Types
 import { types } from './types';
 
 const initialState = Map({
-  isFetching: false,
-  isOnline: false,
+    isFetching: false,
+    alertPopup: {
+        isOpened: false,
+        title:    '',
+        message:  '',
+    },
 });
 
 export const uiReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case types.START_FETCHING:
-      return state.set('isFetching', true);
+    switch (action.type) {
+        case types.START_FETCHING:
+            return state.set('isFetching', true);
 
-    case types.STOP_FETCHING:
-      return state.set('isFetching', false);
+        case types.STOP_FETCHING:
+            return state.set('isFetching', false);
 
-    case types.SET_ONLINE_STATE:
-      return state.set('isOnline', true);
+        case types.OPEN_ALERT_POPUP:
+            return state.setIn([ 'alertPopup' ], fromJS({
+                isOpened: true,
+                title:    action.payload.title,
+                message:  action.payload.message,
+            }));
 
-    case types.SET_OFLINE_STATE:
-      return state.set('isOnline', false);
+        case types.CLOSE_ALERT_POPUP:
+            return state.setIn([ 'alertPopup' ], fromJS({
+                isOpened: false,
+                title:    '',
+                message:  '',
+            }));
 
-    default:
-      return state;
-  };
+        default:
+            return state;
+    }
 };

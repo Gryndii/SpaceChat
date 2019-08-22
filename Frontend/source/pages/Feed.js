@@ -1,18 +1,36 @@
-// Core
-import React, { Component } from 'react';
+//Core
+import React, {Component} from 'react';
 
-// Components
-import { Catcher, Spinner, Nav, Posts, Notification } from '../components';
+//Instruments
+import { Grid, Container } from '@material-ui/core';
+
+//Components
+import { Posts, PopularUsers } from '../components';
 
 export default class Feed extends Component {
-    render () {
+    render() {
         return (
-            <Catcher>
-                <Spinner />
-                <Nav />
-                <Posts />
-                <Notification />
-            </Catcher>
+            <Container className = 'contentPaddingTop'>
+                <Grid
+                    container
+                    justify = 'center'
+                    spacing = { 10 }>
+                    <Grid
+                        item
+                        xs = { 12 }
+                        sm = { 6 }
+                        md = { 5 }>
+                        <Posts/>
+                    </Grid>
+                    <Grid
+                        item
+                        xs = { 12 }
+                        sm = { 6 }
+                        md = { 4 }>
+                        <PopularUsers/>
+                    </Grid>
+                </Grid>
+            </Container>
         );
     }
 }

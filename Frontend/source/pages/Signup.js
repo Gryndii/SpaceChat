@@ -1,18 +1,28 @@
-// Core
-import React, { Component } from 'react';
+//Core
+import React, {Component} from 'react';
 
-// Components
-import { Catcher, Spinner, Nav, SignupForm, Notification } from '../components';
+//Instruments
+import {Container, Grid} from '@material-ui/core';
+
+//Components
+import { SignupForm } from '../components';
 
 export default class Signup extends Component {
-    render () {
+    render() {
         return (
-            <Catcher>
-                <Spinner />
-                <Nav />
-                <SignupForm />
-                <Notification />
-            </Catcher>
+            <Container>
+                <Grid
+                    container
+                    spacing = { 0 }
+                    direction = 'column'
+                    alignItems = 'center'
+                    justify = 'center'
+                    style = {{ minHeight: '100vh' }}>
+                    <Grid item>
+                        <SignupForm/>
+                    </Grid>
+                </Grid>
+            </Container>
         );
     }
 }

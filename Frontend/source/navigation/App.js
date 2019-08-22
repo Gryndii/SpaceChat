@@ -1,45 +1,51 @@
-// Core
+//Core
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { hot } from 'react-hot-loader';
 import { withRouter } from 'react-router-dom';
+import { hot } from 'react-hot-loader';
+import { bindActionCreators } from 'redux';
+
+//Instruments
+import { materialUiTheme } from '../theme/assets/materialUiTheme';
 
 //Routes
 import Public from './Public';
 import Private from './Private';
-import { Loading } from '../components';
+
+//Components
+import { withMaterialUiTheme } from '../components';
 
 //Actions
-import { initializeAsync } from '../bus/auth/actions';
-import { listenConnection, listenPosts } from '../bus/socket/actions';
-//Socket
-import { socket, joinSocketChannel } from '../init/socket';
+import { authActions } from '../bus/auth/actions';
 
-const mapState = state => {
-    return {
-        isAuthenticated: state.auth.get('isAuthenticated'),
-        isInitialized: state.auth.get('isInitialized'),
-    };
-};
+const mapStateToProps = (state) => ({
+    isAuthenticated: state.auth.get('isAuthenticated'),
+});
+
+const mapDispatchToProps  = (dispatch) => ({
+    actions: bindActionCreators({
+        authenticateAsync: authActions.authenticateAsync,
+    }, dispatch),
+});
 
 @hot(module)
+@withMaterialUiTheme(materialUiTheme)
 @withRouter
-@connect(mapState, { initializeAsync, listenConnection, listenPosts })
+@connect(mapStateToProps, mapDispatchToProps)
 export default class App extends Component {
-    componentDidMount () {
-        this.props.initializeAsync();
-        this.props.listenConnection();
-        joinSocketChannel();
+    componentDidMount() {
+        const { actions } = this.props;
+
+        actions.authenticateAsync();
     }
 
-    render () {
-        const { isAuthenticated, isInitialized, listenPosts } = this.props;
+    render() {
+        const { isAuthenticated } = this.props;
 
-        if  (!isInitialized) {
-            return <Loading />
-        }
-
-        return isAuthenticated ? <Private listenPosts = { listenPosts } socket = { socket } /> : <Public />
+        return (
+            isAuthenticated
+                ? <Private/>
+                : <Public/>
+        );
     }
 }
-

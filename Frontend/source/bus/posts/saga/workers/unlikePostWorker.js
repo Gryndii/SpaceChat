@@ -1,23 +1,25 @@
-//Core 
+//Core
 import { put, apply, select } from 'redux-saga/effects';
 
 //Instruments
 import { api } from '../../../../API';
-import { unlikePost } from '../../actions';
-import { startFetching, stopFetching } from '../../../ui/actions'
- 
+
+//Actions
+import { postsActions } from '../../actions';
+
 export function* unlikePostWorker({ payload: postId }) {
-  try {
-    yield put(startFetching());
+    try {
+        yield apply(api, api.posts.unlike, [ postId ]);
 
-    yield apply(api, api.posts.like, [ postId ]);
+        const liker = yield select((state) => state.profile.getIn([ 'credentials', 'handle' ]));
 
-    const userId = yield select(state => state.profile.get('id'));
+        yield put(postsActions.unlikePost({
+            postId,
+            liker,
+        }));
+    } catch ({message}) {
+        console.log('Unlike Post Worker Error: ', message);
+    } finally {
 
-    yield put(unlikePost({ postId, userId }));
-  } catch (error) {
-    console.log(error)
-  } finally {
-    yield put(stopFetching());
-  }
-};
+    }
+}

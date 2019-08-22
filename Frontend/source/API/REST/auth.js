@@ -1,54 +1,41 @@
-// Instruments
-import { MAIN_URL, groupId } from '../config';
+//Instruments
+import { MAIN_URL } from '../config';
+import { ServerError } from '../../helpers';
 
-export class Auth {
-  async signup (userData) {
-    const responce = await fetch(`${MAIN_URL}/user/${groupId}`, {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(userData),
-    });
+export default class Auth {
+    async login(userData) {
+        const response = await fetch(`${ MAIN_URL }/login`, {
+            method:  'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(userData),
+        });
 
-    const { data, message } = await responce.json();
+        if (response.status !== 200) {
+            throw new ServerError('Login was not successful', await response.json());
+        }
 
-    if (responce.status !== 200) {
-      throw new Error(message);
+        const { token } = await response.json();
+
+        return token;
     }
 
-    return data;
-  }
+    async signup(userData) {
+        const response = await fetch(`${ MAIN_URL }/signup`, {
+            method:  'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(userData),
+        });
 
-  async login (credentials) {
-    const responce = await fetch(`${MAIN_URL}/user/login`, {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(credentials),
-    });
+        if (response.status !== 201) {
+            throw new ServerError('Signup was not successful', await response.json());
+        }
 
-    const { data, message } = await responce.json();
+        const { token } = await response.json();
 
-    if (responce.status !== 200) {
-      throw new Error(message);
+        return token;
     }
-
-    return data;
-  }
-
-  async logout (token) {
-    const responce = await fetch(`${MAIN_URL}/user/logout`, {
-      method: "GET",
-      headers: {
-        Authorization: token,
-      },
-    });
-
-    if (responce.status !== 204) {
-      const { message } = await responce.json();
-      throw new Error(message);
-    }
-  }
 }

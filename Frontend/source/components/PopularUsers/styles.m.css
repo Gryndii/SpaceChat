@@ -1,0 +1,27 @@
+.popularUsers {
+    position: relative;
+    & .title {
+        padding-left: 16px;
+        margin-bottom: 20px;
+    }
+    & .list {
+
+    }
+    & .likeCount {
+        display: inline-flex;
+        align-items: center;
+    }
+    & .likeIcon {
+        margin-left: 10px;
+    }
+    & .spinner {
+        position: absolute;
+        z-index: 2;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+}

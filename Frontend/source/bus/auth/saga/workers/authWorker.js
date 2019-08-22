@@ -1,34 +1,28 @@
-//Core 
+//Core
 import { put, apply } from 'redux-saga/effects';
-import { actions } from 'react-redux-form';
 
 //Instruments
 import { api } from '../../../../API';
-import { authenticate, initialize } from '../../actions';
-import { startFetching, stopFetching } from '../../../ui/actions'
-import { fillProfile } from '../../../profile/actions'
+import { authActions } from '../../actions';
+import { uiActions } from '../../../ui/actions';
+import { profileActions } from '../../../profile/actions';
 
 export function* authWorker() {
-  try {
-    yield put(startFetching());
+    try {
+        yield put(uiActions.startFetching());
 
-    const token = yield apply(localStorage, localStorage.getItem, ['token']);
+        const token = yield api.token;
 
-    if (!token) {
-      return null;
+        if (!token) { return; }
+
+        const userData = yield apply(api, api.profile.getProfileUser);
+
+        yield put(profileActions.fillProfile(userData));
+
+        yield put(authActions.authenticate());
+    } catch ({message}) {
+        console.log('Authentication Worker Error: ', message);
+    } finally {
+        yield put(uiActions.stopFetching());
     }
-
-    const profile = yield apply(api, api.auth.login, [{token}]);
-  
-    yield put(authenticate());
-    yield put(fillProfile(profile));
-
-    const { firstName, lastName } = profile;
-    yield put(actions.merge('forms.user.profile', { firstName, lastName }));
-  } catch (error) {
-    console.log('authWorker', error);
-  } finally {
-    yield put(stopFetching());
-    yield put(initialize());
-  }
-};
+}

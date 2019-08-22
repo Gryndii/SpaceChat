@@ -1,31 +1,31 @@
-import Catcher from './Catcher';
-import Composer from './Composer';
-import LoginForm from './Forms/Login';
-import NewPasswordForm from './Forms/NewPassword';
-import ProfileForm from './Forms/Profile';
-import SignupForm from './Forms/Signup';
-import Input from './Input';
-import Like from './Like';
-import Loading from './Loading';
-import Nav from './Nav';
-import Notification from './Notification';
+import Navbar from './Navbar';
 import Post from './Post';
-import Spinner from './Spinner';
 import Posts from './Posts';
+import TextComposer from './TextComposer';
+import { AnimatedBg } from './AnimatedBg';
+import { withMaterialUiTheme } from './HOC/withMaterialUiTheme';
+import LoginForm from './LoginForm';
+import Spinner from './Spinner';
+import WelcomeScreen from './WelcomeScreen';
+import SignupForm from './SignupForm';
+import PopularUsers from './PopularUsers';
+import UserCard from './UserCard';
+import AlertPopup from './AlertPopup';
+import PostCatcher from './PostCatcher';
 
 export {
-    Catcher,
-    Composer,
-    LoginForm,
-    NewPasswordForm,
-    ProfileForm,
-    SignupForm,
-    Input,
-    Like,
-    Loading,
-    Nav,
-    Notification,
+    Navbar,
     Post,
+    Posts,
+    TextComposer,
+    LoginForm,
+    SignupForm,
+    AnimatedBg,
+    withMaterialUiTheme,
     Spinner,
-    Posts
+    WelcomeScreen,
+    PopularUsers,
+    UserCard,
+    AlertPopup,
+    PostCatcher,
 };

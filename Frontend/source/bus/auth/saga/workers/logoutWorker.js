@@ -1,28 +1,26 @@
-//Core 
-import { put, apply } from 'redux-saga/effects';
+//Core
+import { put } from 'redux-saga/effects';
 
 //Instruments
 import { api } from '../../../../API';
-import { logout } from '../../actions';
-import { startFetching, stopFetching } from '../../../ui/actions'
-import { clearProfile } from '../../../profile/actions'
+
+//Actions
+import { authActions } from '../../actions';
+import { uiActions } from '../../../ui/actions';
+import { profileActions } from '../../../profile/actions';
 
 export function* logoutWorker() {
-  try {
-    yield put(startFetching());
+    try {
+        yield put(uiActions.startFetching());
 
-    const token = yield apply(localStorage, localStorage.getItem, ['token']);
+        yield api.removeToken();
 
-    if (token) {
-      yield apply(localStorage, localStorage.removeItem, ['token']);
-      yield apply(api, api.auth.logout, [token]);
+        yield put(profileActions.clearProfile());
+
+        yield put(authActions.logout());
+    } catch ({message}) {
+        console.log('Logout Worker Error: ', message);
+    } finally {
+        yield put(uiActions.stopFetching());
     }
-    
-  } catch (error) {
-    console.log('logoutWorker', error);
-  } finally {
-    yield put(logout());
-    yield put(stopFetching());
-    yield put(clearProfile());
-  }
-};
+}

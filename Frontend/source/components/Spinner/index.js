@@ -1,26 +1,28 @@
-// Core
-import React, { Component } from 'react';
+//Core
+import React from 'react';
 import { connect } from 'react-redux';
 
-// Instruments
+//Instruments
+import spinnerImg from './spinner.svg';
 import Styles from './styles.m.css';
 
-const mapStateToProps = (state) => {
-    return {
-        isFetching: state.ui.get('isFetching'),
-    }
+const mapStateToProps = (state) => ({
+    isFetching: state.ui.get('isFetching'),
+});
+
+const Spinner = (props) => {
+    const { isFetching } = props;
+
+    return (
+        isFetching
+            ? <div className = { Styles.spinner }>
+                <img
+                    src = { spinnerImg }
+                    alt = ''
+                />
+            </div>
+            : null
+    );
 };
 
-@connect(
-    mapStateToProps, 
-)
-export default class Spinner extends Component {
-    static defaultProps = {
-        isFetching: false,
-    };
-    render () {
-        const { isFetching } = this.props;
-
-        return isFetching ? <div className = { Styles.spinner } /> : null;
-    }
-}
+export default connect(mapStateToProps)(Spinner);

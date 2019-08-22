@@ -1,0 +1,21 @@
+.navbar {
+    & .navbarContainer {
+        margin: auto;
+    }
+
+    & .navbarBtn {
+        margin: 0 5px;
+        & svg {
+            width: 20px;
+            height: 20px;
+            margin-left: 6px;
+            margin-top: -2px;
+            color: #b3daff;
+        }
+    }
+
+    & .activeBtn {
+        background-color: rgba(0, 0, 0, 0.08);
+    }
+}
+

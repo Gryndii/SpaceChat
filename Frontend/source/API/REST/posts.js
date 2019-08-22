@@ -1,68 +1,134 @@
-// Instruments
-import { MAIN_URL, groupId } from '../config';
+//Instruments
+import { MAIN_URL } from '../config';
+import {ServerError} from '../../helpers';
 
-export class Posts {
-  async get () {
-    const result = await fetch(`${MAIN_URL}/feed`, {
-      method: "GET",
-      headers: {
-        'x-no-auth': groupId,
-      }
-    });
+export default class Posts {
+    async getAllPosts() {
+        const response = await fetch(`${ MAIN_URL }/posts`, {
+            method: 'GET',
+        });
 
-    const { data } = await result.json();
+        if (response.status !== 200) {
+            throw new Error('Posts weren`t fetched');
+        }
+        const data = await response.json();
 
-    if (result.status !== 200) {
-      throw new Error(message);
+        return data;
     }
 
-    return data;
-  }
+    async getUserPosts(userId) {
+        const response = await fetch(`${ MAIN_URL }/posts/${userId}`, {
+            method: 'GET',
+        });
 
-  async like (postId) {
-    const result = await fetch(`${MAIN_URL}/feed/like/${postId}`, {
-      method: 'PUT',
-      headers: {
-        Authorization: this.token,
-      }
-    });
+        if (response.status !== 200) {
+            throw new Error('Posts weren`t fetched');
+        }
+        const data = await response.json();
 
-    if (result.status !== 204) {
-      const { message } = await result.json();
-      throw new Error(message);
-    }
-  }
-
-  async create (comment) {
-    const result = await fetch(`${MAIN_URL}/feed`, {
-      method: 'POST',
-      headers: {
-        Authorization: this.token,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({comment}),
-    });
-
-    const { data: post, message } = await result.json();
-
-    if (result.status !== 200) {
-      throw new Error(message);
+        return data;
     }
 
-    return post;
-  }
+    async create(postText) {
+        console.log('Api', postText);
+        const response = await fetch(`${ MAIN_URL }/post`, {
+            method:  'POST',
+            headers: {
+                Authorization:  this.token,
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                body: postText,
+            }),
+        });
 
-  async remove (postId) {
-    const result = await fetch(`${MAIN_URL}/feed/${postId}`, {
-      method: 'DELETE',
-      headers: {
-        Authorization: this.token,
-      },
-    });
+        if (response.status !== 200) {
+            throw new Error('Post wasn`t created');
+        }
+        const data = await response.json();
 
-    if (result.status !== 204) {
-      const { message } = await result.json();
-      throw new Error(message);
+        return data;
     }
-  }
+
+    async delete(postId) {
+        const response = await fetch(`${ MAIN_URL }/post/${postId}`, {
+            method:  'DELETE',
+            headers: {
+                Authorization: this.token,
+            },
+        });
+
+        if (response.status !== 200) {
+            throw new ServerError('Post wasn`t deleted', await response.json());
+        }
+
+        const data = await response.json();
+
+        return data;
+    }
+
+    async like(postId) {
+        const response = await fetch(`${ MAIN_URL }/post/${postId}/like`, {
+            method:  'GET',
+            headers: {
+                Authorization: this.token,
+            },
+        });
+
+        if (response.status !== 200) {
+            throw new Error('Post wasn`t liked');
+        }
+        const data = await response.json();
+
+        return data;
+    }
+
+    async unlike(postId) {
+        const response = await fetch(`${ MAIN_URL }/post/${postId}/unlike`, {
+            method:  'GET',
+            headers: {
+                Authorization: this.token,
+            },
+        });
+
+        if (response.status !== 200) {
+            throw new Error('Post wasn`t unliked');
+        }
+        const data = await response.json();
+
+        return data;
+    }
+
+    async getExtendedPost(postId) {
+        const response = await fetch(`${ MAIN_URL }/post/${postId}`, {
+            method: 'GET',
+        });
+
+        if (response.status !== 200) {
+            throw new Error('Comments weren`t fetch');
+        }
+        const extended = await response.json();
+
+        return extended;
+    }
+
+    async createComment(postId, commentText) {
+        const response = await fetch(`${ MAIN_URL }/post/${postId}/comment`, {
+            method:  'POST',
+            headers: {
+                Authorization:  this.token,
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                body: commentText,
+            }),
+        });
+
+        if (response.status !== 200) {
+            throw new Error('Comment wasn`t created');
+        }
+        const newComment = await response.json();
+
+        return newComment;
+    }
 }
