@@ -1,17 +1,18 @@
 //Core
 const functions = require('firebase-functions');
 const express = require('express');
-const { db } = require('./util/admin');
-//const cors = require('cors')({origin: true});
+const cors = require('cors');
 
 const app = express();
 
-// Automatically allow cross-origin requests
-//app.use(cors({ origin: true }));
+app.use(cors({ origin: true }));
+
+const { db } = require('./util/admin');
 
 //Handlers
 const {
     getAllPosts,
+    getUserPosts,
     createPost,
     getOnePost,
     deletePost,
@@ -27,6 +28,7 @@ const {
     addUserDetails,
     getAuthenticatedUser,
     getUserDetails,
+    getPopularUsers,
     markNotificationsRead
 } = require('./handlers/users');
 
@@ -40,10 +42,12 @@ app.post('/user/image', FBAuth, uploadImage);
 app.post('/user', FBAuth, addUserDetails);
 app.get('/user', FBAuth, getAuthenticatedUser);
 app.get('/user/:handle', getUserDetails);
+app.get('/users/popular', getPopularUsers);
 app.post('/notifications', FBAuth, markNotificationsRead);
 
 //Post Routes
 app.get('/posts', getAllPosts);
+app.get('/posts/:handle', getUserPosts);
 app.post('/post', FBAuth, createPost);
 app.get('/post/:postId', getOnePost);
 app.delete('/post/:postId', FBAuth, deletePost);

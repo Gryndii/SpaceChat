@@ -1,6 +1,6 @@
 //Core
 import React, {Component} from 'react';
-import { number, string, shape, bool, func } from 'prop-types';
+import { number, string, bool, func } from 'prop-types';
 import { Link } from 'react-router-dom';
 
 //Instruments
@@ -33,13 +33,6 @@ export default class Post extends Component {
         text:         string.isRequired,
         likeCount:    number.isRequired,
         commentCount: number.isRequired,
-        comments:     shape([
-            {
-                userHandle: string.isRequired,
-                userImage:  string.isRequired,
-                body:       string.isRequired,
-            },
-        ]).isRequired,
         handleLikeClick:            func.isRequired,
         handleCommentClick:         func.isRequired,
         handleDeleteClick:          func.isRequired,

@@ -30,7 +30,6 @@ export default class Posts {
     }
 
     async create(postText) {
-        console.log('Api', postText);
         const response = await fetch(`${ MAIN_URL }/post`, {
             method:  'POST',
             headers: {

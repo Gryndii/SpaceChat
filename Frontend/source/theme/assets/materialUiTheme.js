@@ -7,10 +7,10 @@ export const materialUiTheme = Object.freeze({
             contrastText: '#fff',
         },
         secondary: {
-            light:        '#ff7961',
-            main:         '#f44336',
-            dark:         '#ba000d',
-            contrastText: '#000',
+            light:        '#b240ff',
+            main:         '#a53cee',
+            dark:         '#9235d3',
+            contrastText: '#ffffff',
         },
     },
 });

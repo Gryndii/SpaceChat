@@ -32,6 +32,7 @@ const mapDispatchToProps = (dispatch) => ({
 export default class Navbar extends Component {
     render() {
         const { actions, userUrl } = this.props;
+        const NavLinkRef = React.forwardRef((props, ref) => <div ref={ref}><NavLink {...props} /></div>);
 
         return (
             <AppBar position = 'fixed' className = { Styles.navbar }>
@@ -39,7 +40,7 @@ export default class Navbar extends Component {
                     <Button
                         className = { Styles.navbarBtn }
                         color = 'inherit'
-                        component = { NavLink }
+                        component = { NavLinkRef }
                         activeClassName = { Styles.activeBtn }
                         to = { book.feed }
                     >
@@ -50,7 +51,7 @@ export default class Navbar extends Component {
                     <Button
                         className = { Styles.navbarBtn }
                         color = 'inherit'
-                        component = { NavLink }
+                        component = { NavLinkRef }
                         activeClassName = { Styles.activeBtn }
                         to = { `${book.user}/${ userUrl }` }
                     >

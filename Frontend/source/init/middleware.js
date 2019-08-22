@@ -4,7 +4,6 @@ import createSagaMiddleware from 'redux-saga';
 import { createBrowserHistory } from 'history';
 import { routerMiddleware as createRouterMiddleware } from 'connected-react-router';
 import { createLogger } from 'redux-logger';
-import { tokenMiddleware } from './refreshTokenMiddleware';
 
 const sagaMiddleware = createSagaMiddleware();
 const history = createBrowserHistory();

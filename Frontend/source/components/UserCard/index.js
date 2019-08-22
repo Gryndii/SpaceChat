@@ -107,14 +107,14 @@ export default class UserCard extends Component {
                         : null
                 }
 
-                <CardContent Alignment='center'>
+                <CardContent>
                     <div className = { Styles.header }>
                         <div className={Styles.avatarWrapper}>
                             {
                                 isMine
                                     ? <div className = { Styles.avatarBtn }>
                                           <input type="file" onChange={ this._handleImageUploading }/>
-                                          <EditIcon  fontSize = '30px' />
+                                          <EditIcon />
                                       </div>
                                     : null
                             }
@@ -169,6 +169,9 @@ export default class UserCard extends Component {
                                                         disabled={ !isEditing }
                                                     />
                                                 }
+                                                secondaryTypographyProps = {{
+                                                    component: 'div',
+                                                }}
                                             />
                                         </ListItem>
 
@@ -189,6 +192,9 @@ export default class UserCard extends Component {
                                                         disabled={ !isEditing }
                                                     />
                                                 }
+                                                secondaryTypographyProps = {{
+                                                    component: 'div',
+                                                }}
                                             />
                                         </ListItem>
 
@@ -209,6 +215,9 @@ export default class UserCard extends Component {
                                                         disabled={ !isEditing }
                                                     />
                                                 }
+                                                secondaryTypographyProps = {{
+                                                    component: 'div',
+                                                }}
                                             />
                                         </ListItem>
                                     </List>

@@ -6,7 +6,8 @@ const config = require("./config");
 exports.admin = admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
     databaseURL:  config.databaseURL,
+    storageBucket: config.storageBucket,
 });
 
-exports.db = admin.firestore();
-
+const db = admin.firestore();
+module.exports = { admin, db };

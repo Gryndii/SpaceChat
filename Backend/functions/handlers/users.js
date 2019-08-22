@@ -46,6 +46,7 @@ exports.signUp = (request, response) => {
                 createdAt: new Date().toISOString(),
                 imageUrl: `https://firebasestorage.googleapis.com/v0/b/${config.storageBucket}/o/${noImg}?alt=media`,
                 userId,
+                userRate: 0,
             };
             db.doc(`/users/${newUser.handle}`).set(userCredentials);
         })
@@ -95,55 +96,61 @@ exports.login = (request, response) => {
         });
 };
 
-exports.uploadImage = (request, response) => {
+exports.uploadImage = (req, res) => {
     const BusBoy = require('busboy');
     const path = require('path');
     const os = require('os');
     const fs = require('fs');
 
-    //response.json({message: 'wtf in uploadImage handler after imports'});
+    const busboy = new BusBoy({ headers: req.headers });
 
-    const busboy = new BusBoy({ headers: request.headers });
-
-    let imageFileName;
     let imageToBeUploaded = {};
+    let imageFileName;
 
     busboy.on('file', (fieldname, file, filename, encoding, mimetype) => {
-        if(mimetype !== 'image/jpeg' && mimetype !== 'image/png' && mimetype !== 'image/gif') {
-            return response.status(400).json({ message: 'Wrong file type submitted' });
+        console.log(fieldname, file, filename, encoding, mimetype);
+        if (mimetype !== 'image/jpeg' && mimetype !== 'image/png') {
+            return res.status(400).json({ error: 'Wrong file type submitted' });
         }
-
+        // my.image.png => ['my', 'image', 'png']
         const imageExtension = filename.split('.')[filename.split('.').length - 1];
-        imageFileName = `${Math.round(Math.random() * 10000000000)}.${imageExtension}`;
-        const filePath = path.join(os.tmpdir(), imageFileName);
-        imageToBeUploaded = { filePath, mimetype };
-        file.pipe(fs.createWriteStream(filePath));
+        // 32756238461724837.png
+        imageFileName = `${Math.round(
+            Math.random() * 1000000000000
+        ).toString()}.${imageExtension}`;
+        const filepath = path.join(os.tmpdir(), imageFileName);
+        imageToBeUploaded = { filepath, mimetype };
+        file.pipe(fs.createWriteStream(filepath));
     });
-
     busboy.on('finish', () => {
-        admin.storage().bucket().upload(imageToBeUploaded.filePath, {
-            resumable: false,
-            metadata: {
+        admin
+            .storage()
+            .bucket()
+            .upload(imageToBeUploaded.filepath, {
+                resumable: false,
                 metadata: {
-                    contentType: imageToBeUploaded.mimetype,
-                },
-            },
-        })
-        .then(() => {
-            const imageUrl = `https://firebasestorage.googleapis.com/v0/b/${config.storageBucket}/o/${imageFileName}?alt=media`;
-            return db.doc(`/users/${request.user.handle}`).update({ imageUrl });
-        })
-        .then(() => {
-            return response.json({ message: 'Image uploaded successfully' });
-        })
-        .catch((error) => {
-            console.error(error);
-            return response.status(500).json({ error: error.code });
-        });
+                    metadata: {
+                        contentType: imageToBeUploaded.mimetype
+                    }
+                }
+            })
+            .then(() => {
+                const imageUrl = `https://firebasestorage.googleapis.com/v0/b/${
+                    config.storageBucket
+                    }/o/${imageFileName}?alt=media`;
+                return db.doc(`/users/${req.user.handle}`).update({ imageUrl });
+            })
+            .then(() => {
+                return res.json({ message: 'image uploaded successfully' });
+            })
+            .catch((err) => {
+                console.error(err);
+                return res.status(500).json({ error: 'something went wrong' });
+            });
     });
-
-    busboy.end(request.rawBody);
+    busboy.end(req.rawBody);
 };
+
 
 exports.addUserDetails = (request, response) => {
     let userDetails = reduceUserDetails(request.body);
@@ -191,6 +198,15 @@ exports.getAuthenticatedUser = (request, response) => {
                     notificationId: doc.id,
                 });
             });
+
+            return db.collection('likes').where('recipient', '==', request.user.handle).get();
+        })
+        .then((data) => {
+            userData.usersLikedCount = 0;
+            data.forEach((doc) => {
+                ++userData.usersLikedCount;
+            });
+
             return response.json(userData);
         })
         .catch((error) => {
@@ -200,34 +216,43 @@ exports.getAuthenticatedUser = (request, response) => {
 };
 
 exports.getUserDetails = (request, response) => {
-    let userData = {};
+    let userData;
     db.doc(`/users/${request.params.handle}`).get()
         .then((doc) => {
             if (doc.exists) {
-                userData.user = doc.data();
-                return db
-                    .collection('posts')
-                    .where('userHandle', '==', request.params.handle)
-                    .orderBy('createdAt', 'desc')
-                    .get();
+                userData = doc.data();
+                return db.collection('likes').where('recipient', '==', request.params.handle).get();
             } else {
                 return response.status(404).json({ error: 'User does not exist'});
             }
         })
         .then((data) => {
-            userData.posts = [];
+            userData.usersLikedCount = 0;
             data.forEach((doc) => {
-                userData.posts.push({
-                    body: doc.data().body,
-                    createdAt: doc.data().createdAt,
-                    userHandle: doc.data().userHandle,
-                    userImage: doc.data().userImage,
-                    likeCount: doc.data().likeCount,
-                    commentCount: doc.data().commentCount,
-                    postId: doc.id,
-                });
+                ++userData.usersLikedCount;
             });
+
             return response.json(userData);
+        })
+        .catch((error) => {
+            console.error(error);
+            return response.status(500).json({ error: error.code });
+        })
+};
+
+exports.getPopularUsers = (request, response) => {
+    db
+        .collection('users')
+        .orderBy('userRate', 'desc')
+        .limit(5)
+        .get()
+        .then((data) => {
+            const topUsers = [];
+            data.forEach((doc) => {
+                topUsers.push(doc.data());
+            });
+
+            return response.json(topUsers);
         })
         .catch((error) => {
             console.error(error);

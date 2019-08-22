@@ -1,5 +1,5 @@
 //Instruments
-import { MAIN_URL } from '../config';
+import { MAIN_URL, TOKEN_REFRESH_URL } from '../config';
 import { ServerError } from '../../helpers';
 
 export default class Auth {

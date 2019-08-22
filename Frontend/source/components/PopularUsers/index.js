@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Link } from 'react-router-dom';
+import { shape, string } from 'prop-types';
 
 //Instruments
 import { book } from '../../navigation/book';
@@ -41,6 +42,14 @@ const mapDispatchToProps = (dispatch) => ({
 
 @connect(mapStateToProps, mapDispatchToProps)
 export default class PopularUsers extends Component {
+    static propTypes = {
+        popularUsers: shape({
+            userId:   string.isRequired,
+            handle:   string.isRequired,
+            imageUrl: string.isRequired,
+        })
+    };
+
     componentDidMount() {
         const { actions } = this.props;
 
@@ -50,7 +59,7 @@ export default class PopularUsers extends Component {
     render() {
         const { popularUsers, isFetching } = this.props;
         const popularUsersJsx = popularUsers.map((user) => (
-            <ListItem>
+            <ListItem key = { user.get('userId') }>
                 <ListItemAvatar>
                     <Avatar
                         component={ Link }

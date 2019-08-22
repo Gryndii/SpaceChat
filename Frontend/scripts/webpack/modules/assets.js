@@ -45,7 +45,7 @@ export const loadImages = () => ({
 export const setupFavicon = () => ({
     plugins: [
         new FaviconsWebpackPlugin({
-            logo:            './static/favicon/favicon.svg',
+            logo:            './static/favicon/astronaut.png',
             prefix:          'images/favicon/icon-[hash]',
             statsFilename:   'iconstats-[hash].json',
             persistentCache: true,
@@ -58,8 +58,8 @@ export const setupHtml = () => ({
         new HtmlWebpackPlugin({
             inject:   false,
             template: HtmlWebpackTemplate,
-            title:    'Lectrum Education',
-            favicon:  `${STATICS}/favicon/lectrum-favicon-512x512.png`,
+            title:    'SpaceChat',
+            favicon:  `${STATICS}/favicon/astronaut.png`,
             meta:     [
                 {
                     name:    'viewport',

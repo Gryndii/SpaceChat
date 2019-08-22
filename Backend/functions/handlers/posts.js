@@ -21,6 +21,25 @@ exports.getAllPosts = (request, response) => {
         .catch((err) => console.error(err));
 };
 
+exports.getUserPosts = (request, response) => {
+    db
+        .collection('posts')
+        .where('userHandle', '==', request.params.handle)
+        .orderBy('createdAt', 'desc')
+        .get()
+        .then((data) => {
+            let posts = [];
+            data.forEach((doc) => {
+                posts.push({
+                    postId: doc.id,
+                    ...doc.data(),
+                });
+            });
+            return response.json(posts);
+        })
+        .catch((err) => console.error(err));
+};
+
 exports.createPost = (request, response) => {
     if (isEmpty(request.body.body)) {
         return response.status(400).json({ body: 'Body must be not empty' });
@@ -31,6 +50,8 @@ exports.createPost = (request, response) => {
         userImage: request.user.imageUrl,
         userHandle: request.user.handle,
         createdAt: new Date().toISOString(),
+        likers: [],
+        comments: [],
         likeCount: 0,
         commentCount: 0,
     };
@@ -150,6 +171,7 @@ exports.likePost = (request, response) => {
             if (doc.exists) {
                 postData = doc.data();
                 postData.postId = doc.id;
+
                 return likeDocument.get();
             } else {
                 return response.status(404).json({ error: 'Post doesn`t exist' });
@@ -160,10 +182,23 @@ exports.likePost = (request, response) => {
                 db.collection('likes').add({
                     postId: request.params.postId,
                     userHandle: request.user.handle,
+                    recipient: postData.userHandle,
                 })
                 .then(() => {
                     postData.likeCount++;
-                    return postDocument.update({ likeCount: postData.likeCount });
+                    postData.likers.push(request.user.handle);
+                    postDocument.update({
+                        likeCount: postData.likeCount,
+                        likers: postData.likers,
+                    });
+
+                    return db.doc(`/users/${postData.userHandle}`).get();
+                })
+                .then((doc) => {
+                    if (!doc.exists) {
+                        return;
+                    }
+                    return doc.ref.update({ userRate: doc.data().userRate + 1 });
                 })
                 .then(() => {
                     return response.json(postData);
@@ -205,7 +240,21 @@ exports.unlikePost = (request, response) => {
                 return db.doc(`/likes/${data.docs[0].id}`).delete()
                     .then(() => {
                         postData.likeCount--;
-                        return postDocument.update({ likeCount: postData.likeCount });
+                        postData.likers = postData.likers.filter((liker) => {
+                            return liker !== request.user.handle
+                        });
+                        postDocument.update({
+                            likeCount: postData.likeCount,
+                            likers: postData.likers,
+                        });
+
+                        return db.doc(`/users/${postData.userHandle}`).get();
+                    })
+                    .then((doc) => {
+                        if (!doc.exists) {
+                            return;
+                        }
+                        return doc.ref.update({ userRate: doc.data().userRate - 1 });
                     })
                     .then(() => {
                         return response.json(postData);
