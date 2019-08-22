@@ -147,9 +147,9 @@ export default class Posts extends Component {
                     !userId || userId === activeUser
                         ? <TextComposer
                             handleSubmit = { this._handlePostSubmit }
-                            placeholder='What`s new in your space?'
-                            avatarImg={activeUserImage}
-                            avatarUrl={`${book.user}/${activeUser}`}
+                            placeholder = 'What`s new in your space?'
+                            avatarImg = {activeUserImage}
+                            avatarUrl = {`${book.user}/${activeUser}`}
                          />
                         : null
                 }
@@ -161,10 +161,11 @@ export default class Posts extends Component {
                 }
 
                 <FlipMove
-                    duration={400}
-                    enterAnimation="elevator"
-                    leaveAnimation="elevator"
-                    typeName="div"
+                    duration = { 300 }
+                    easing = "ease-out"
+                    enterAnimation = "elevator"
+                    leaveAnimation = { null }
+                    typeName = { null }
                 >
                     {
                         postsJsx
