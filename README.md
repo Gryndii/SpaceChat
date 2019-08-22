@@ -38,7 +38,7 @@ Deploy:
 Frontend:
 cd Frontend
 yarn build / npm build
-+
++ firebase deploy (firstly init it in frontend for hosting)
 
 Backend:
 cd Backend
