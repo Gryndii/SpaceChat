@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79395b3a-0cac-4ff3-9adb-c4f4ae79e60c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/.yo-rc.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/.yo-rc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/__mocks__/fileMock.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/jest/jest.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/jest/jest.eslint.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/jest/jest.stylelint.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/jest/jest.test.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/jest/scripts/mocks/fetch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/jest/scripts/mocks/localStorage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/jest/scripts/setupEnzymeEnvironment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/jest/scripts/setupFiles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="79395b3a-0cac-4ff3-9adb-c4f4ae79e60c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,12 +225,20 @@
       <workItem from="1565863904550" duration="168401000" />
       <workItem from="1566331656232" duration="1248000" />
       <workItem from="1566386034123" duration="19062000" />
-      <workItem from="1566413742119" duration="21511000" />
+      <workItem from="1566413742119" duration="21795000" />
     </task>
+    <task id="LOCAL-00001" summary="'commit'">
+      <created>1566491893812</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1566491893812</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="467133000" />
+    <option name="totallyTimeSpent" value="467417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -265,7 +256,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4977307" visible="true" weight="0.62356794" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4977307" visible="true" weight="0.4811784" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50226927" side_tool="true" weight="0.7528642" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -298,6 +289,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="'commit'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'commit'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
