@@ -107,7 +107,7 @@
         "postcss-reporter": "6.0.0",
         "prettier-eslint-cli": "4.7.1",
         "prop-types": "15.6.2",
-        "react-dev-utils": "5.0.2",
+        "react-dev-utils": "11.0.4",
         "redux-logger": "3.0.6",
         "react-hot-loader": "^4.12.10",
         "redux-saga-test-plan": "3.7.0",
